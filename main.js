@@ -2,12 +2,8 @@ let turn = "X";
 let won = false;
 // Gameboard and player objects
 
-let Gameboard = { gameBoard: ["", "", "", "", "", "", "", "", ""] };
+const Gameboard = { gameBoard: ["", "", "", "", "", "", "", "", ""] };
 
-const Player = (name, score) => {
-  const getName = () => name;
-  const getScore = () => score;
-};
 
 //Setting up the playground
 function start(n = 3) {
@@ -238,7 +234,15 @@ function endmenow() {
   }
 }
 function resetButton() {
-  Gameboard = { gameBoard: ["", "", "", "", "", "", "", "", ""] };
+  Gameboard.gameBoard[0] = ""
+  Gameboard.gameBoard[1] = ""
+  Gameboard.gameBoard[2] = ""
+  Gameboard.gameBoard[3] = ""
+  Gameboard.gameBoard[4] = ""
+  Gameboard.gameBoard[5] = ""
+  Gameboard.gameBoard[6] = ""
+  Gameboard.gameBoard[7] = ""
+  Gameboard.gameBoard[8] = ""
   document.querySelector("#mess").innerHTML = "";
   won = false;
   start();
