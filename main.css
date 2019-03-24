@@ -1,0 +1,30 @@
+body {
+  color: red;
+  text-align: center;
+}
+#container {
+  display: grid;
+  width: 350px;
+  height: 350px;
+  grid-template-columns: 100px 100px 100px;
+  padding: 12px;
+  position: absolute;
+    top: 25%;
+    left: 40%;
+    margin-left: -30px;
+   
+}
+.content {
+  display: inline-grid;
+  cursor: pointer;
+  background-color: blueviolet;
+  border: 2px solid white;
+  padding: 12px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+#mess {
+  font-size: 25px;
+
+}
