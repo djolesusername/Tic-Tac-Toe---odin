@@ -7,8 +7,8 @@ const Gameboard = (() => {
   const gameBoard = ["", "", "", "", "", "", "", "", ""];
 
   //Setting up the playground
-  const start = function () {
-    for (let j = 0; j < 9; j++)
+  const start = function (n = 3) {
+    for (let j = 0; j < n * n; j++)
       document.querySelector(`#i${j}`).innerHTML = Gameboard.gameBoard[j];
     Flow.endmenow();
 
