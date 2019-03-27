@@ -30,3 +30,10 @@ body {
   background-color: green;
 
 }
+button {
+  background-color: blueviolet;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+  padding: 10px;
+}
